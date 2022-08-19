@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+.navbar-brand{
+    color:white
+}
+
+.nav-heading{
+    color:white;
+    padding:2px;
+    margin:8px;
+    text-decoration: none;
+    font-weight: bold;
+    position:relative;
+    bottom: 2px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 1.3rem;
+}
+.navbar-nav{
+margin-left: 35%;
+}

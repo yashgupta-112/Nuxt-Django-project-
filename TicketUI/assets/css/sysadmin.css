@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+.heading{
+    color:white;
+    margin-top:4px;
+    font-family: 'DynaPuff', cursive;
+}
+
+.form-label{
+    color:whitesmoke;
+    font-family: 'DynaPuff', cursive;
+}
+
+.btn{
+    background-color: #14b89f;
+    border: 1px solid #14b89f;
+}

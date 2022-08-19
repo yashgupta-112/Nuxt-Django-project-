@@ -1,0 +1,45 @@
+body {
+    background-color:#091a28;
+  }
+  
+  #banner{
+      display: flex;
+      justify-content: center;
+      position: relative;
+      right: 15px;
+  }
+  .brand-name{
+      display: flex;
+      justify-content: center;
+      color:whitesmoke;
+      margin-left: 40px;
+      animation: fadein 15s;
+      position: relative;
+      right: 15px;
+  }
+  .brand-logo{
+      animation: fadein 8s;
+      position: relative;
+      right: 15px;
+      justify-content: center;
+      
+  }
+  
+  
+  .brand-name-tag{
+    display: flex;
+    justify-content: center;
+    color:grey;
+    margin-left: 18px;
+    animation: fadein 15s;
+    opacity: .4;
+    
+  }
+  
+  
+  @keyframes fadein {
+    from { opacity: 0}
+    to   { opacity: 1}
+  }
+  
+  
