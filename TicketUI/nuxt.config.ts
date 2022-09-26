@@ -18,6 +18,6 @@ export default defineNuxtConfig({
         
         '~/assets/css/main.css'
      ],
-
+ 
 
 })
