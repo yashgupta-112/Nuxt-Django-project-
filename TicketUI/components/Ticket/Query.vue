@@ -11,11 +11,11 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>UCP</td>
-      <td>High</td>
-      <td>help</td>
+    <tr v-for="data in tickdata" :key="data.id">
+      <th scope="row">{{data.id}}</th>
+      <td>{{data.department}}</td>
+      <td>{{data.priority}}</td>
+      <td>{{data.subject}}</td>
     </tr>
 
   </tbody>
@@ -27,3 +27,27 @@
 <style scoped>
 @import url("../../assets/css/query.css");
 </style>
+
+
+<script setup>
+import { onMounted } from 'vue';
+const tickdata = ref("");
+const username = ref("");
+
+if (process.client) {
+  username.value = localStorage.getItem("username");
+}
+
+async function Get_function(user){
+  const response = await $fetch(`http://127.0.0.1:8000/fetch-ticket/${user}/`)
+ const data = response
+ tickdata.value = data
+  //  console.log(response)
+}
+
+onMounted(()=>{
+  Get_function(username.value)
+  console.log(tickdata.value)
+})
+
+</script>

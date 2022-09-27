@@ -92,7 +92,7 @@
         </div>
 
         <div class="d-grid gap-2 col-2 mt-4 mx-auto">
-          <button @click="get_user_data" class="btn btn-primary" type="button">
+          <button @click="sumbit" class="btn btn-primary" type="button">
             Sumbit
           </button>
         </div>
@@ -101,8 +101,7 @@
 
     <hr>
 <ul class="list-group bg-dark" v-for="res in guide" :key="res.title">
-  <li class="list-group-item" v-if="message.match(res.title)">{{res.url}}</li>
-  
+  <li class="list-group-item mb-2" v-if="message.match(res.title)"> <a :href=res.url target="_blank">{{res.url}}</a></li>
 </ul>
   </div>
   <br>
@@ -158,7 +157,7 @@ onMounted(() => {
 
 async function sumbit() {
   if (
-    username.value.length >= 4 &&
+    user.value.length >= 4 &&
     email.value.length >= 4 &&
     subject.value.length >= 4 &&
     message.value.length >= 4
