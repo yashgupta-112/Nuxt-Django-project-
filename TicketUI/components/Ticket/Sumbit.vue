@@ -149,7 +149,7 @@ onMounted(() => {
       email.value = data.value[i][1];
     }
   }
-  // function to get closet match depends on user query
+  // function to get closet match depends on user queries
   guides()
 });
 
